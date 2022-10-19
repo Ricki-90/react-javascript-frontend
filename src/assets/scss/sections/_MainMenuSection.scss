@@ -8,6 +8,13 @@
     .logo {
         font-size: 35px;
         font-weight: 700;
+        color: $color-dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-dark;
+            text-decoration: none;  
+        }
     }
 
     .menu-links {

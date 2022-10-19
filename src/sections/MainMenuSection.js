@@ -6,7 +6,7 @@ function MainMenuSection() {
   return (
     <nav className="mainmenu container">
       <div className="logo">
-          <NavLink to="/" end>Fixxo.</NavLink>
+          <NavLink className="logo" to="/" end>Fixxo.</NavLink>
       </div>
       <div className="menu-links">
           <NavLink className="menu-link" to="/" end>Home</NavLink>
