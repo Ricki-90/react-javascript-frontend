@@ -1,7 +1,7 @@
 import React from 'react'
 import MainMenuSection from '../sections/MainMenuSection'
 
-const HomeView = () => {
+function SearchView() {
   return (
     <>
     <MainMenuSection />
@@ -9,4 +9,4 @@ const HomeView = () => {
   )
 }
 
-export default HomeView
+export default SearchView

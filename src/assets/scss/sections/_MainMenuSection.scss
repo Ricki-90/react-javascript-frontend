@@ -25,6 +25,12 @@
                 text-decoration: none;
             }
         }
+
+        .active {
+            color: $color-theme;
+            text-decoration: none;
+        }
+
     }
 
     .menu-icons {
@@ -52,6 +58,13 @@
                 text-decoration: none;
                 box-shadow: 0 0 6px 4px $color-shadow;
             }
+        }
+
+        .active {
+            color: $color-white;
+            background-color: $color-dark;
+            text-decoration: none;
+            box-shadow: 0 0 6px 4px $color-shadow;
         }
     }
 }

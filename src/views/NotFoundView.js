@@ -1,8 +1,12 @@
 import React from 'react'
+import MainMenuSection from '../sections/MainMenuSection'
 
 function NotFoundView() {
   return (
-    <div>404 - Page Not Found</div>
+    <>
+    <MainMenuSection />
+    <h1>404 - Page Not Found</h1>
+    </>
   )
 }
 
