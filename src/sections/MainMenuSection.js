@@ -17,8 +17,8 @@ function MainMenuSection() {
       <div className="menu-icons">
           <MenuIcon link="/search" icon="fa-regular fa-magnifying-glass" />
           <MenuIcon link="/compare" icon="fa-light fa-code-compare" />
-          <MenuIcon link="/wishlist" icon="fa-light fa-heart" />
-          <MenuIcon link="/shoppingcart" icon="fa-light fa-bag-shopping" />
+          <MenuIcon quantity="3" link="/wishlist" icon="fa-light fa-heart" />
+          <MenuIcon quantity="4" link="/shoppingcart" icon="fa-light fa-bag-shopping" />
       </div>
     </nav>
   )
