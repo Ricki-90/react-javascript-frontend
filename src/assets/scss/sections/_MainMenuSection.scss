@@ -80,6 +80,13 @@
             text-decoration: none;
             box-shadow: 0 0 6px 4px $color-shadow;
         }
+
+        .btn-menu-icon {
+            color: $color-white;
+            background-color: $color-dark;
+            border: none;
+            outline: none;
+        }
     }
 }
 
