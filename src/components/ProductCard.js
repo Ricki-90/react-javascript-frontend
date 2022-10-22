@@ -1,21 +1,23 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+import TempImg from '../assets/image/card-img.jpg'
 
 export const ProductCard = () => {
   return (
   <div className="col">
     <div className="card">
         <div className="card-img">
-            <img src="/static-webapp/image/card-img.jpg" alt="" />
+            <img src={TempImg} alt="" />
             <div className="card-menu">
-                <a href="#"><i className="fa-regular fa-heart"></i></a>
-                <a href="#"><i className="fa-regular fa-repeat"></i></a>
-                <a href="#"><i className="fa-regular fa-bag-shopping"></i></a>
+                <button className="menu-link"><i className="fa-regular fa-heart"></i></button>
+                <button className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
+                <button className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
             </div>
-            <a className="__btn-theme btn-card-theme" href="#">
-                <span className="__btn-theme-left"></span>
-                <span className="__btn-theme-right"></span>
+            <NavLink to="/products" className="btn-theme btn-card-theme">
+                <span className="corner-left"></span>
+                <span className="corner-right"></span>
                 QUICK VIEW
-            </a>
+            </NavLink>
         </div>
         <div className="card-body">
             <p className="card-category">Category</p>

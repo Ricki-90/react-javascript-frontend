@@ -2,16 +2,18 @@
     margin-bottom: 60px;
 
     .container {
-        max-width: 1110px;
+        display: flex;
     }
 
     .card {
         border: none;
+        width: 255px;
+        margin-left: auto;
+        margin-right: auto;
         
         img,
-        .card-image {
+        .card-img {
             height: 210px;
-            width: 255px;
             background-color: $linear-gradient-light;
             position: relative;
 
@@ -33,6 +35,8 @@
                     align-items: center;
                     box-shadow: 0 0 6px 4px $color-shadow;
                     position: relative;
+                    border: none;
+                    outline: none;
     
                     &:hover {
                         color: $color-white;
@@ -50,9 +54,7 @@
                 justify-content: center;
                 width: 100%;
                 height: 50px;
-    
-            }
-        
+            }   
         }
 
         .card-body {
@@ -88,6 +90,14 @@
                 display: flex;
 
             }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .product-grid {
+        .container {
+            max-width: 1110px;
         }
     }
 }
