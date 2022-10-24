@@ -22,9 +22,6 @@
         
         .card-img {
             display: grid;
-
-            
-
             background-color: $linear-gradient-light;
             position: relative;
 
@@ -33,8 +30,6 @@
                 height: 210px;
                 object-fit: cover;
             }
-
-
 
             .card-menu {
                 position: absolute;
@@ -102,11 +97,11 @@
 
         &:hover {
             .card-menu {
-                display: block;
+                display: block !important;
             }
 
             .btn-card-theme {
-                display: flex;
+                display: flex !important;
 
             }
         }
@@ -118,5 +113,9 @@
         .container {
             max-width: 1110px;
         }
+
+        .card-menu {
+            display: none;
+        }                
     }
 }
