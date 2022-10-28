@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
-import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 import ProductGridSection from '../sections/ProductGridSection'
+import BannersSection from '../sections/BannersSection'
+import FlashsalesSection from '../sections/FlashsalesSection'
+import FooterSection from '../sections/FooterSection'
 
 const HomeView = () => {
   window.top.document.title = 'Fixxo.'
@@ -25,6 +27,8 @@ const HomeView = () => {
       <MainMenuSection />
       <ProductGridSection title="Featured Products" products={featuredProducts} />
       <ProductGridSection title="Top Products" products={topProducts} />
+      <BannersSection />
+      <FlashsalesSection products={featuredProducts} />
       <FooterSection />
     </>
   )
