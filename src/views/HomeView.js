@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import MainMenuSection from '../sections/MainMenuSection'
+import TopSection from '../sections/TopSection'
 import ProductGridSection from '../sections/ProductGridSection'
 import BannersSection from '../sections/BannersSection'
 import FlashsalesSection from '../sections/FlashsalesSection'
@@ -25,6 +26,7 @@ const HomeView = () => {
   return (
     <>
       <MainMenuSection />
+      <TopSection />
       <ProductGridSection title="Featured Products" products={featuredProducts} />
       <ProductGridSection title="Top Products" products={topProducts} />
       <BannersSection />

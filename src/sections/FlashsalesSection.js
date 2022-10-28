@@ -14,7 +14,7 @@ const FlashsalesSection = ({products}) => {
           <span className="corner-left-w"></span>
           <span className="corner-right-w"></span>
           FLASH SALE
-          </button>
+        </button>
       </div>
 
       <div className="box-size">

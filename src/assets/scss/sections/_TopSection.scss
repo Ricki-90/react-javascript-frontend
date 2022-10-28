@@ -1,0 +1,27 @@
+.top-section {
+    display: flex;
+    background-color: $linear-gradient-dark;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .showcase-body {
+        text-align: center;
+        width: 30%;
+
+        h1 {
+            font-size: 65px;
+            font-weight: 800;
+        }
+
+        p {
+            margin-top: 50px;
+            margin-bottom: 35px;
+            font-size: 20px;
+        }
+
+        .btn-w {
+            width: 35%;
+        }
+    }
+}
