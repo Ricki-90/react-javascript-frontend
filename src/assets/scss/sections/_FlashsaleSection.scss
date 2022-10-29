@@ -1,7 +1,11 @@
 .flashsale-feature {
     margin-top: 50px;
     margin-bottom: 50px;
-    display: flex;
+
+    .container {
+        display: flex;
+        margin-bottom: 70px;
+    }
 
     .box-size {
         width: 825px;
