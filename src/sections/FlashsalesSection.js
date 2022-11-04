@@ -1,7 +1,7 @@
 import React from 'react'
 import { ProductCard } from '../components/ProductCard'
 
-const FlashsalesSection = ({}) => {
+const FlashsalesSection = ({items = []}) => {
   return (
 
     <section className="flashsale-feature">
@@ -19,7 +19,7 @@ const FlashsalesSection = ({}) => {
         <div className="box-size">
           <div className="row row-cols-2">
             {
-              //produkter
+              items.map( product => <ProductCard key={product.articleNumber} item={product} />)
             }
           </div>
         </div>
@@ -29,7 +29,7 @@ const FlashsalesSection = ({}) => {
         <div className="box-size">
           <div className="row row-cols-2">
             {
-              //produkter
+              items.map( product => <ProductCard key={product.articleNumber} item={product} />)
             }
           </div>
         </div>

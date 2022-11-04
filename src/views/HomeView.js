@@ -8,17 +8,20 @@ import SupportIconsSection from '../sections/SupportIconsSection'
 import FooterSection from '../sections/FooterSection'
 import { ProductContext } from '../contexts/contexts'
 
+
 const HomeView = () => {
   window.top.document.title = 'Fixxo.'
   const productContext = useContext(ProductContext)
 
   return (
     <>
+      <div style={{backgroundColor: "#E6E6E6"}}>
       <MainMenuSection />
+      </div>
       <TopSection />
       <ProductGridSection title="Featured Products" items={productContext.featuredProducts} />
       <BannersSection />
-      <FlashsalesSection />
+      <FlashsalesSection items={productContext.flashsalesSection} />
       <SupportIconsSection  />
       <FooterSection />
     </>

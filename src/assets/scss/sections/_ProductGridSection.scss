@@ -78,6 +78,7 @@
                 font-size: 13px;
                 font-weight: 500;
                 color: $color-darkgray;
+                margin-bottom: 5px;
             }
 
             .card-title {
@@ -87,11 +88,13 @@
 
             .card-rating {
                 color: $color-theme;
+                margin: 0;
             }
 
             .card-price {
                 font-size: 18px;
                 font-weight: 600;
+                margin: 0;
             }
         }
 
