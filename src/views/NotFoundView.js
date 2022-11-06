@@ -1,18 +1,16 @@
 import React from 'react'
-import FooterSection from '../sections/FooterSection'
-import MainMenuSection from '../sections/MainMenuSection'
+import NotFoundImage from '../assets/images/error-404.png'
 
 
 function NotFoundView() {
   return (
     <>
-      <MainMenuSection />
-      <div className="container d-flex justify-content-center align-items-center" style={{height: "500px"}}>
-        <h1>404 - Page Not Found</h1>
+    <div className="container">
+      <div className="d-flex justify-content-center align-items-center vh-100">
+        <img src={NotFoundImage} alt="404 Page Not Found" style={{ height: "768px" }} />
+        <h1 className="ms-4" style={{ fontSize: "3rem" }}>The page you were looking for couldn't be found or is under maintenance.</h1>
       </div>
-      <div style={{position: "fixed", bottom: "0"}}>
-      <FooterSection />
-      </div>
+    </div>
     </>
   )
 }

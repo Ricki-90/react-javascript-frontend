@@ -1,22 +1,22 @@
 import React from 'react'
-import imgGirl from './../assets/images/placeholder/img-girl.svg'
-import imgGuy from './../assets/images/placeholder/img-guy.svg'
+import {Link} from 'react-router-dom';
+import img1 from './../assets/images/showcase-img-2.png'
 
 const TopSection = () => {
   return (
     <section className="top-section">
-            <img src={imgGirl} alt="image-girl" />
+            <img src="https://win22imgstorage.blob.core.windows.net/images/showcase-img-1.png" alt="image-girl" />
             <div className="showcase-body">
                 <h1>SALE UP</h1>
                 <h1>To 50% Off</h1>
                 <p>Online shopping free home delivery over $100</p>
-                <button className="btn-theme btn-w">
+                <Link to="/products" className="btn-theme btn-w">
                     <span className="corner-left"></span>
                     <span className="corner-right"></span>
                     SHOP NOW
-                </button>
+                </Link>
             </div>
-            <img src={imgGuy} alt="image-guy" />
+            <img src={img1} alt="image-guy" />
     </section>
   )
 }

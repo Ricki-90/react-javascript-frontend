@@ -13,11 +13,11 @@ const FlashsalesSection = ({items = []}) => {
           <button className="btn-white">
             <span className="corner-left-w"></span>
             <span className="corner-right-w"></span>
-            FLASH SALE
+            <span className="btn-text">FLASH SALE</span>
           </button>
         </div>
         <div className="box-size">
-          <div className="row row-cols-2">
+          <div className="row row-cols-2 product-grid">
             {
               items.map( product => <ProductCard key={product.articleNumber} item={product} />)
             }
@@ -27,7 +27,7 @@ const FlashsalesSection = ({items = []}) => {
 
       <div className="container">
         <div className="box-size">
-          <div className="row row-cols-2">
+          <div className="row row-cols-2 product-grid">
             {
               items.map( product => <ProductCard key={product.articleNumber} item={product} />)
             }

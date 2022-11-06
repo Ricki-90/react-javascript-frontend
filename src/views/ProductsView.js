@@ -2,15 +2,16 @@ import React, {useContext} from 'react'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 import ProductGridSection from '../sections/ProductGridSection'
-import { ProductContext } from '../contexts/contexts'
+import { ProductsContext } from '../contexts/contexts'
 
 
 function ProductsView() {
-  const productContext = useContext(ProductContext)
+  const products = useContext(ProductsContext);
+
   return (
     <>
       <MainMenuSection />
-      <ProductGridSection title="Products" items={productContext.all} />
+      <ProductGridSection title="Products" items={products} />
       <FooterSection />
     </>
   )

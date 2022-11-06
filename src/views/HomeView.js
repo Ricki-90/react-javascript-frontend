@@ -6,22 +6,23 @@ import BannersSection from '../sections/BannersSection'
 import FlashsalesSection from '../sections/FlashsalesSection'
 import SupportIconsSection from '../sections/SupportIconsSection'
 import FooterSection from '../sections/FooterSection'
-import { ProductContext } from '../contexts/contexts'
+import { FeaturedProductsContext, fetchFlashsalesContext } from '../contexts/contexts'
 
 
 const HomeView = () => {
   window.top.document.title = 'Fixxo.'
-  const productContext = useContext(ProductContext)
+  const products = useContext(FeaturedProductsContext);
+  const flashsale = useContext(fetchFlashsalesContext);
 
   return (
     <>
-      <div style={{backgroundColor: "#E6E6E6"}}>
-      <MainMenuSection />
-      </div>
-      <TopSection />
-      <ProductGridSection title="Featured Products" items={productContext.featuredProducts} />
+      <header>
+        <MainMenuSection />
+        <TopSection />
+      </header>
+      <ProductGridSection title="Featured Products" items={products} />
       <BannersSection />
-      <FlashsalesSection items={productContext.flashsalesSection} />
+      <FlashsalesSection items={flashsale}/>
       <SupportIconsSection  />
       <FooterSection />
     </>

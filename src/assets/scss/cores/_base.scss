@@ -19,6 +19,11 @@ text-decoration: none;
     border: 1px solid $color-theme!important;
 }
 
+header {
+    background: $color-linear-gradient-dark;
+    background: linear-gradient(90deg, $color-linear-gradient-dark 0%, $color-linear-gradient-light 100%);
+}
+
 @media (min-width: 1600px) {
     .container {
         max-width: $max-width;
