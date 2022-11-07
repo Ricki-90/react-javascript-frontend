@@ -1,10 +1,8 @@
 .top-section {
     display: flex;
-    background-color: $linear-gradient-dark;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 100px;
-
 
     .showcase-body {
         text-align: center;
@@ -17,12 +15,13 @@
 
         p {
             margin-top: 50px;
-            margin-bottom: 35px;
+            margin-bottom: 50px;
             font-size: 20px;
         }
 
         .btn-w {
-            width: 35%;
+            width: 37%;
+            font-weight: 500;
         }
     }
 }

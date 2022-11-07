@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProductCard } from '../components/ProductCard'
+import { ProductCardLeft } from '../components/ProductCardLeft'
 
 const FlashsalesSection = ({items = []}) => {
   return (
@@ -19,7 +19,7 @@ const FlashsalesSection = ({items = []}) => {
         <div className="box-size">
           <div className="row row-cols-2 product-grid">
             {
-              items.map( product => <ProductCard key={product.articleNumber} item={product} />)
+              items.map( product => <ProductCardLeft key={product.articleNumber} item={product} />)
             }
           </div>
         </div>
@@ -29,7 +29,7 @@ const FlashsalesSection = ({items = []}) => {
         <div className="box-size">
           <div className="row row-cols-2 product-grid">
             {
-              items.map( product => <ProductCard key={product.articleNumber} item={product} />)
+              items.map( product => <ProductCardLeft key={product.articleNumber} item={product} />)
             }
           </div>
         </div>

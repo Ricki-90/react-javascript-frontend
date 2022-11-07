@@ -84,6 +84,8 @@
             .card-title {
                 font-size: 16px;
                 font-weight: 600;
+                margin: 0;
+                margin-bottom: 6px;
             }
 
             .card-rating {
@@ -110,6 +112,52 @@
         }
     }
 }
+
+
+
+//Left side
+
+.card-category-left {
+    font-size: 13px;
+    font-weight: 500;
+    color: $color-darkgray;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.card-title-left {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.card-rating-left {
+    color: $color-theme;
+    margin: 0;
+    text-align: left;
+}
+
+.card-price-left {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1200px) {
     .product-grid {

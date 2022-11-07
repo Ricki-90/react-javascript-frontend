@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import './style.min.css';
+import './style.min.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomeView from './views/HomeView';
 import ProductsView from './views/ProductsView';

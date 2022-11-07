@@ -13,6 +13,7 @@
     }
 
     .flashsale-box {
+        margin-top: 30px;
         width: 825px;
         height: 665px;
         background-color: $color-gray;
@@ -27,9 +28,12 @@
             color: $color-white;
             margin-bottom: 40px;
         }
+
+        .btn-text {
+            font-weight: 600;
+        }
     }
 }
-
 
 @media (min-width: 1200px) {
 .product-grid {
