@@ -14,7 +14,6 @@ export   const submitData = async (url, method, data, contentType = 'application
     return false   
 }
 
-
 export const validate = (e, form = null) => {
     if (e.type === 'submit') {
      const errors = {}
@@ -35,7 +34,6 @@ export const validate = (e, form = null) => {
          }
     }
  }
- 
  
  const validate_name = (value) => {
      if (!value)

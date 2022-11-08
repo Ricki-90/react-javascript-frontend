@@ -15,7 +15,6 @@ export const ProductCard = ({item}) => {
         console.log ("added to shopping cart")
     }
 
-
   return (
   <div className="col">
     <div className="card">

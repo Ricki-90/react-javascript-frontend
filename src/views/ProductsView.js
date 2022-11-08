@@ -2,7 +2,7 @@ import React, {useContext} from 'react'
 import FooterSection from '../sections/FooterSection'
 import MainMenuSection from '../sections/MainMenuSection'
 import ProductGridSection from '../sections/ProductGridSection'
-import { ProductsContext } from '../contexts/contexts'
+import { ProductsContext } from '../contexts/ProductContexts'
 
 
 function ProductsView() {

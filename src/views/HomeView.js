@@ -6,7 +6,7 @@ import BannersSection from '../sections/BannersSection'
 import FlashsalesSection from '../sections/FlashsalesSection'
 import SupportIconsSection from '../sections/SupportIconsSection'
 import FooterSection from '../sections/FooterSection'
-import { FeaturedProductsContext, fetchFlashsalesContext } from '../contexts/contexts'
+import { FeaturedProductsContext, fetchFlashsalesContext } from '../contexts/ProductContexts'
 
 
 const HomeView = () => {

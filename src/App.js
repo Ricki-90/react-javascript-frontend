@@ -6,7 +6,7 @@ import ProductsView from './views/ProductsView';
 import ContactsView from './views/ContactsView';
 import NotFoundView from './views/NotFoundView';
 import ProductDetailsView from './views/ProductDetailsView';
-import { ProductsContext, FeaturedProductsContext, fetchFlashsalesContext } from './contexts/contexts'
+import { ProductsContext, FeaturedProductsContext, fetchFlashsalesContext } from './contexts/ProductContexts'
 
 function App() {
   const [products, setProducts] = useState([])

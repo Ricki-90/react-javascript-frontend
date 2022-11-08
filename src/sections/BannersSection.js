@@ -10,7 +10,7 @@ const BannersSection = () => {
         <img src={imagePamela} alt="image" />
       </div>
       <div>
-          <img src={imageLetsBe} alt="image" />
+        <img src={imageLetsBe} alt="image" />
       </div>
     </section>
   )
