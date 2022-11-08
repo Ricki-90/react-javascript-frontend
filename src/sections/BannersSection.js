@@ -7,10 +7,10 @@ const BannersSection = () => {
   return (
     <section className="container d-flex gap-3 mb-5">
       <div>
-        <img src={imagePamela} alt="image" />
+        <img className="img-banner-left" src={imagePamela} alt="image-left" />
       </div>
       <div>
-        <img src={imageLetsBe} alt="image" />
+        <img className="img-banner-right" src={imageLetsBe} alt="image-right" />
       </div>
     </section>
   )

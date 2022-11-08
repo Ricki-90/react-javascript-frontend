@@ -5,7 +5,7 @@ import img1 from './../assets/images/showcase-img-2.png'
 const TopSection = () => {
   return (
     <section className="top-section">
-      <img src="https://win22imgstorage.blob.core.windows.net/images/showcase-img-1.png" alt="image-girl" />
+      <img className="image-girl-left" src="https://win22imgstorage.blob.core.windows.net/images/showcase-img-1.png" alt="girl-left" />
       <div className="showcase-body">
           <h1>SALE UP</h1>
           <h1>To 50% Off</h1>
@@ -16,7 +16,7 @@ const TopSection = () => {
             SHOP NOW
           </Link>
       </div>
-      <img src={img1} alt="image-guy" />
+      <img className="image-girl-right" src={img1} alt="girl-right" />
     </section>
   )
 }
