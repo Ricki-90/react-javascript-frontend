@@ -1,19 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useShoppingCart } from '../contexts/ShoppingCartContext'
 
 export const ProductCard = ({item}) => {
-
-    const addToWishList = (e) => {
-        console.log ("added to wish list")
-    }
-
-    const addToCompare = (e) => {
-        console.log ("added to compare")
-    }
-
-    const addToCart = (e) => {
-        console.log ("added to shopping cart")
-    }
+    const {incrementQuantity} = useShoppingCart
 
   return (
   <div className="col">
@@ -21,9 +11,9 @@ export const ProductCard = ({item}) => {
         <div className="card-img">
             <img src={item.imageName} alt={item.name} />
             <div className="card-menu d-xl-none">
-                <button onClick={addToWishList} className="menu-link"><i className="fa-regular fa-heart"></i></button>
-                <button onClick={addToCompare} className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
-                <button onClick={addToCart} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
+                <button  className="menu-link"><i className="fa-regular fa-heart"></i></button>
+                <button  className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
+                <button onClick={() => incrementQuantity({articalNumber: item.articalNumber, product: item})} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
             </div>
             <NavLink to={`/products/${item.name.toLowerCase().replace(/ /gi, "-")}`} className="btn-theme btn-card-theme d-xl-none">
                 <span className="corner-left"></span>

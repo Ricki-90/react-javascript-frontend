@@ -7,6 +7,7 @@ import ContactsView from './views/ContactsView';
 import NotFoundView from './views/NotFoundView';
 import ProductDetailsView from './views/ProductDetailsView';
 import { ProductsContext, FeaturedProductsContext, fetchFlashsalesContext } from './contexts/ProductContexts'
+import {ShoppingCartProvider} from './contexts/ShoppingCartContext';
 
 function App() {
   const [products, setProducts] = useState([])
@@ -38,6 +39,7 @@ function App() {
   
   return (
     <BrowserRouter>
+      <ShoppingCartProvider>
       <ProductsContext.Provider value={products}>
       <FeaturedProductsContext.Provider value={featured}>
       <fetchFlashsalesContext.Provider value={flashsale}>
@@ -51,6 +53,7 @@ function App() {
       </fetchFlashsalesContext.Provider>
       </FeaturedProductsContext.Provider>
       </ProductsContext.Provider>
+      </ShoppingCartProvider>
     </BrowserRouter>
   );
 }
