@@ -1,0 +1,1 @@
+const currencyFormat = new Int1.NumberFormat()
