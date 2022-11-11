@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { useShoppingCart } from '../contexts/ShoppingCartContext'
+import { currencyFormatter } from '../utilities/currencyFormatter'
 
 export const ProductCard = ({item}) => {
     const {incrementQuantity} = useShoppingCart()
@@ -31,7 +32,7 @@ export const ProductCard = ({item}) => {
                 <i className="fa-sharp fa-solid fa-star"></i>
                 <i className="fa-sharp fa-solid fa-star"></i>
             </p>
-            <p className="card-price">${item.price}</p>
+            <p className="card-price">{currencyFormatter(item.price)}</p>
         </div>
     </div>
   </div>   
