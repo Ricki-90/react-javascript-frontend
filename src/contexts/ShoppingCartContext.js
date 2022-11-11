@@ -4,7 +4,6 @@ const { createContext, useContext, useState } = require("react");
 
 const ShoppingCartContext = createContext()
 
-
 export const useShoppingCart = () => {
     return useContext (ShoppingCartContext)
 }
@@ -16,19 +15,19 @@ export const ShoppingCartProvider = ({children}) => {
         (quantity, item) => item.quantity + quantity, 0
     )
 
-    const getItemQuantity = (articaleNumber) => {
-        return cartItems.find(item => item.articaleNumber === articaleNumber)?.quantity || 0
+    const getItemQuantity = (articleNumber) => {
+        return cartItems.find(item => item.articleNumber === articleNumber)?.quantity || 0
     }
 
     const incrementQuantity = (cartItem) => {
-        const {articaleNumber, product} = cartItem
+        const {articleNumber, product} = cartItem
 
         setCartItems(items => {
-            if (items.find(item => item.articaleNumber === articaleNumber) == null) {
-                return [...items, { articaleNumber, product, quantity: 1 }]
+            if (items.find(item => item.articleNumber === articleNumber) == null) {
+                return [...items, { articleNumber, product, quantity: 1 }]
             } else {
                 return items.map(item => {
-                    if (item.articaleNumber === articaleNumber) {
+                    if (item.articleNumber === articleNumber) {
                         return { ...item, quantity: item.quantity + 1 }
                     } else {
                         return item
@@ -39,14 +38,14 @@ export const ShoppingCartProvider = ({children}) => {
     }
 
     const decrementQuantity = (cartItem) => {
-        const {articaleNumber} = cartItem
+        const {articleNumber} = cartItem
 
         setCartItems(items => {
-            if (items.find(item => item.articaleNumber === articaleNumber).quantity === 1) {
-                return items.filter(item => item.articaleNumber !== articaleNumber)
+            if (items.find(item => item.articleNumber === articleNumber).quantity === 1) {
+                return items.filter(item => item.articleNumber !== articleNumber)
             } else {
                 return items.map(item => {
-                    if (item.articaleNumber === articaleNumber) {
+                    if (item.articleNumber === articleNumber) {
                         return { ...item, quantity: item.quantity - 1 }
                     } else {
                         return item
@@ -56,9 +55,9 @@ export const ShoppingCartProvider = ({children}) => {
         })
     }
 
-    const removeItem = (articaleNumber) => {
+    const removeItem = (articleNumber) => {
         setCartItems(items => {
-            return items.filter(item => item.articaleNumber !== articaleNumber)
+            return items.filter(item => item.articleNumber !== articleNumber)
         })
     }
 

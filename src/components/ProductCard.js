@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import { useShoppingCart } from '../contexts/ShoppingCartContext'
 
 export const ProductCard = ({item}) => {
-    const {incrementQuantity} = useShoppingCart
+    const {incrementQuantity} = useShoppingCart()
 
   return (
   <div className="col">
@@ -13,7 +13,7 @@ export const ProductCard = ({item}) => {
             <div className="card-menu d-xl-none">
                 <button  className="menu-link"><i className="fa-regular fa-heart"></i></button>
                 <button  className="menu-link"><i className="fa-regular fa-code-compare"></i></button>
-                <button onClick={() => incrementQuantity({articalNumber: item.articalNumber, product: item})} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
+                <button onClick={() => incrementQuantity({articleNumber: item.articleNumber, product: item})} className="menu-link"><i className="fa-regular fa-bag-shopping"></i></button>
             </div>
             <NavLink to={`/products/${item.name.toLowerCase().replace(/ /gi, "-")}`} className="btn-theme btn-card-theme d-xl-none">
                 <span className="corner-left"></span>

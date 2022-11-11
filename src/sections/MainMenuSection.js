@@ -25,13 +25,10 @@ const MainMenuSection = () => {
           <MenuIcon link="/search" icon="fa-regular fa-magnifying-glass" />
           <MenuIcon hideOnMobile={true} link="/compare" icon="fa-light fa-code-compare" />
           <MenuIcon hideOnMobile={true} quantity="3" link="/wishlist" icon="fa-light fa-heart" />
-
-          <button className="menu-icon" quantity={cartQuantity} type="button" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
-          <i class="fa-regular fa-bag-shopping"></i>
+          <button className="menu-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-theme">{cartQuantity}</span>
+          <i className="fa-regular fa-bag-shopping"></i>
           </button>
-
-
-
           <button onClick={toggleMenu} className="d-xl-none menu-icon btn-menu-icon"><i className="fa-regular fa-bars"></i></button>
         </div>
     </nav>
