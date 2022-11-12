@@ -3,7 +3,6 @@ import { ProductCardLeft } from '../components/ProductCardLeft'
 
 const FlashsalesSection = ({items = []}) => {
   return (
-
     <section className="flashsale-feature">
       <div className="container">
         <div className="flashsale-box">
@@ -44,9 +43,7 @@ const FlashsalesSection = ({items = []}) => {
           </button>
         </div>
       </div>
-     </section>
-
-    
+     </section>   
   )
 }
 

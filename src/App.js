@@ -34,8 +34,6 @@ function App() {
     fetchFlashsalesData()
 
   }, [setProducts, setFeatured, setFlashsales])  
-
-  
   
   return (
     <BrowserRouter>

@@ -77,9 +77,8 @@ const ContactForm = () => {
               <h3>Something went wrong!</h3> 
               <p>We couldn't submit your comment right now.</p>
               </div>  ) : (<></>)
-        }
-        
-        
+        }  
+
         <h2>Come in Contact with Us</h2>
         <form onSubmit={handleSubmit} noValidate>
           <div>
